@@ -4,8 +4,8 @@ import requests
 import MySQLdb
 import datetime
 
-from utils.const_value import API, KEY, UNIT, LANGUAGE
-from utils.lff_readcitys import CITYS
+from confiles.const_value import API, KEY, UNIT, LANGUAGE
+from confiles.lff_readcitys import CITYS
 
 class WEATHER(object):
     def __init__(self, location):
