@@ -38,6 +38,9 @@ if __name__ == '__main__':
     citylist1 = city._getcityenname1()
     citylist2 = city._getcityenname2()
 
+    for c in citylist1:
+        print c
+
     db = MySQLdb.connect("localhost", "root", "!Cky2306mysql", "weather", port=3306)
     cursor = db.cursor()
     for c in citylist1:
